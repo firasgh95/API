@@ -2,10 +2,10 @@ from flask import Blueprint, request, jsonify
 from sqlalchemy import create_engine, text
 import connection.database as db
 import numpy as np
-import matplotlib.pyplot as plt
 import cv2
 import io
 from flask import send_file
+
 # Initialize Blueprint
 image_api = Blueprint('image_api', __name__)
 
